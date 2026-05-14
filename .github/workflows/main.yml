@@ -27,7 +27,7 @@ jobs:
 
     - name: Configure ngrok
       run: |
-        ngrok config add-authtoken IHR_NGROK_TOKEN
+        ngrok config add-authtoken ${{ secrets.NGROK_AUTH_TOKEN }}
 
     - name: Install OpenSSH
       run: |
